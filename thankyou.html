@@ -5,44 +5,27 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Thank You • SSGPT6</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="icon-192.png" />
 </head>
-
 <body>
-  <header>
-    <h1>Payment received ✅</h1>
-    <p>Thank you for supporting SSGPT6.</p>
-  </header>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Thank you ✅</h1>
+      <p class="muted">
+        Your payment was received. We will deliver your package by email within 48 hours.
+      </p>
 
-  <main class="container">
-    <h2>Next step</h2>
-    <p>
-      Please email your purchase details (or screenshot) to:
-      <b>ssgpt6@aol.com</b>
-    </p>
-
-    <p style="opacity: 0.85;">
-      Delivery: within 48 hours (manual fulfillment).
-    </p>
-
-    <p style="margin-top: 22px;">
-      <a class="button" href="tools.html">Go to Tools</a>
-      <a class="button" href="index.html">Back Home</a>
-    </p>
-
-    <p style="margin-top: 26px; opacity: 0.8;">
-      If you were NOT redirected automatically, it means the PayPal button’s “Return URL”
-      is not set yet. Set it to:
-      <br><b>https://ssgpt6.com/thankyou.html</b>
-    </p>
+      <div class="card">
+        <h2>Next step</h2>
+        <p class="muted">
+          Please email your purchase email + selected plan to:
+          <b>ssgpt6@aol.com</b>
+        </p>
+        <a class="btn primary" href="mailto:ssgpt6@aol.com?subject=SSGPT6%20Order%20Confirmation&body=Hi%20Team%2C%0A%0AI%20just%20paid%20and%20my%20plan%20is%3A%20(19%2F29%2F49).%0A%0AOrder%20email%3A%20%0A%0AThank%20you!">
+          Email Confirmation
+        </a>
+        <a class="btn" href="index.html">Back to Home</a>
+      </div>
+    </section>
   </main>
-
-  <footer class="footer">
-    © <span id="y"></span> SSGPT6 • GNAIAAAC LLC
-  </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
