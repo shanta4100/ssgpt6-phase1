@@ -2,37 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thank You — Moonlight Global AI</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thank You • SSGPT6</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body { margin:0; font-family: system-ui, -apple-system, Arial, sans-serif; background:#071423; color:#eaf2ff; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 16px; }
-    .box { margin-top:16px; padding:18px; border:1px solid rgba(255,255,255,.08); border-radius:16px; background: rgba(255,255,255,.03); }
-    a { color:#cfe2ff; }
-    .btn { display:inline-block; margin-top:14px; padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.12); text-decoration:none; }
-  </style>
+  <link rel="icon" href="icon-192.png" />
 </head>
+
 <body>
-  <div class="wrap">
-    <h1>✅ Payment received</h1>
+  <header>
+    <h1>Payment received ✅</h1>
+    <p>Thank you for supporting SSGPT6.</p>
+  </header>
 
-    <div class="box">
-      <p>Thank you for your support.</p>
-      <p><b>Next step:</b> We will deliver your digital package by email.</p>
-      <p>If you need help, contact: <b>ssgpt6@aol.com</b></p>
-
-      <a class="btn" href="index.html">Back to Home</a>
-      <a class="btn" href="tools.html">Explore Tools</a>
-    </div>
-
-    <p style="opacity:.75; margin-top:16px;">
-      © <span id="year"></span> Moonlight Global AI™ — Operated by GNAIAAAC LLC
+  <main class="container">
+    <h2>Next step</h2>
+    <p>
+      Please email your purchase details (or screenshot) to:
+      <b>ssgpt6@aol.com</b>
     </p>
-  </div>
+
+    <p style="opacity: 0.85;">
+      Delivery: within 48 hours (manual fulfillment).
+    </p>
+
+    <p style="margin-top: 22px;">
+      <a class="button" href="tools.html">Go to Tools</a>
+      <a class="button" href="index.html">Back Home</a>
+    </p>
+
+    <p style="margin-top: 26px; opacity: 0.8;">
+      If you were NOT redirected automatically, it means the PayPal button’s “Return URL”
+      is not set yet. Set it to:
+      <br><b>https://ssgpt6.com/thankyou.html</b>
+    </p>
+  </main>
+
+  <footer class="footer">
+    © <span id="y"></span> SSGPT6 • GNAIAAAC LLC
+  </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
