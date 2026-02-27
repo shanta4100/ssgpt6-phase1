@@ -1,143 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moonlight Global AI | Simple AI Tools for Real People</title>
-  <meta name="description" content="Affordable AI tools, creator systems, and productivity resources designed for real people." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonlight Global AI</title>
 
-  <!-- Icons -->
+  <!-- ICONS -->
   <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
   <link rel="apple-touch-icon" href="/icon-192.png">
   <meta name="theme-color" content="#0b1c2d">
 
   <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #0b1c2d;
-      color: #e6edf3;
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#0b1c2d;
+      color:white;
     }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: #081520;
-      flex-wrap: wrap;
+    header{
+      padding:20px;
+      background:#081520;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
-
-    .logo {
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 1.2;
+    h1{margin:0;}
+    .container{
+      max-width:900px;
+      margin:auto;
+      padding:40px 20px;
     }
-
-    nav a {
-      margin-left: 20px;
-      color: #c9d1d9;
-      text-decoration: none;
-      font-size: 14px;
+    .card{
+      background:#0f2438;
+      padding:20px;
+      border-radius:15px;
+      margin-bottom:20px;
     }
-
-    nav a:hover {
-      color: #f0c674;
+    .price{
+      color:gold;
+      font-weight:bold;
+      margin-bottom:10px;
     }
-
-    .hero {
-      padding: 80px 40px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      background:gold;
+      color:black;
+      font-weight:bold;
+      border-radius:10px;
+      text-decoration:none;
+      margin-top:10px;
     }
-
-    .badge {
-      color: #f0c674;
-      font-size: 13px;
-      letter-spacing: 1px;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #a9b6c2;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      padding: 12px 24px;
-      margin: 8px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
-      font-size: 14px;
-    }
-
-    .primary {
-      background: #f0c674;
-      color: #0b1c2d;
-    }
-
-    .secondary {
-      border: 1px solid #2f4f6b;
-      color: #e6edf3;
-    }
-
-    .section {
-      padding: 60px 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: #0f2438;
-      padding: 30px;
-      border-radius: 12px;
-      border: 1px solid #1d3a52;
-    }
-
-    .price {
-      color: #f0c674;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      padding: 40px;
-      text-align: center;
-      background: #081520;
-      font-size: 13px;
-      color: #8899a6;
-    }
-
-    footer a {
-      color: #c9d1d9;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #f0c674;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 30px;
-      }
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#081520;
+      margin-top:40px;
+      font-size:14px;
     }
   </style>
 </head>
@@ -145,74 +65,54 @@
 <body>
 
 <header>
-  <div class="logo">Moonlight<br>Global AI™</div>
-  <nav>
-    <a href="#tools">Tools</a>
-    <a href="#learning">Learning</a>
-    <a href="#services">Services</a>
-    <a href="#buy">Buy Now</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <h1>Moonlight Global AI™</h1>
 </header>
 
-<section class="hero">
-  <div class="badge">AFFORDABLE • PRACTICAL • PEOPLE-FIRST</div>
-  <h1>Simple AI Tools for Real People.</h1>
-  <p>
-    Creator templates, productivity systems, and beginner-friendly AI learning resources —
-    designed to help you build steadily without hype or unrealistic promises.
-  </p>
-  <a class="btn primary" href="#tools">View Affordable Tools</a>
-  <a class="btn secondary" href="#learning">Start Learning</a>
-</section>
+<div class="container">
 
-<section id="tools" class="section">
-  <h2>Creator Toolkit</h2>
-  <div class="products">
+  <h2>Simple AI Tools for Real People</h2>
+  <p>Affordable • Practical • People-first</p>
 
-    <div class="card">
-      <div class="price">$9 — Starter AI Pack</div>
-      <p>Basic templates and AI prompts for beginners.</p>
-      <a class="btn primary" href="https://buy.stripe.com/REPLACE_STARTER_LINK">Get Starter Pack</a>
-    </div>
+  <!-- PRODUCT 1 -->
+  <div class="card">
+    <h3>Starter AI Pack</h3>
+    <div class="price">$9</div>
+    <p>Beginner prompts and templates to help you start fast.</p>
 
-    <div class="card">
-      <div class="price">$19 — Creator Toolkit</div>
-      <p>Hook templates, script frameworks, and prompt workflows.</p>
-      <a class="btn primary" href="https://buy.stripe.com/REPLACE_CREATOR_LINK">Get Toolkit</a>
-    </div>
-
-    <div class="card">
-      <div class="price">$29 — Productivity Bundle</div>
-      <p>Planning systems and structured AI workflow guidance.</p>
-      <a class="btn primary" href="https://buy.stripe.com/REPLACE_PRODUCTIVITY_LINK">Get Bundle</a>
-    </div>
-
+    <!-- 🔵 PUT YOUR REAL STRIPE LINK BELOW -->
+    <a class="btn" href="https://buy.stripe.com/PUT_YOUR_REAL_LINK_HERE">
+      Buy Starter Pack
+    </a>
   </div>
-</section>
 
-<section id="about" class="section">
-  <h2>About Moonlight Global AI</h2>
-  <p>
-    Moonlight Global AI provides accessible digital systems for creators and builders.
-    We focus on practical tools, ethical positioning, and sustainable growth.
-  </p>
-</section>
+  <!-- PRODUCT 2 -->
+  <div class="card">
+    <h3>Creator Toolkit</h3>
+    <div class="price">$19</div>
+    <p>Hooks, scripts and structured publishing system.</p>
 
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: support@ssgpt6.com</p>
-</section>
+    <!-- 🔵 PUT YOUR REAL STRIPE LINK BELOW -->
+    <a class="btn" href="https://buy.stripe.com/PUT_YOUR_REAL_LINK_HERE">
+      Buy Creator Toolkit
+    </a>
+  </div>
+
+  <!-- PRODUCT 3 -->
+  <div class="card">
+    <h3>Productivity Bundle</h3>
+    <div class="price">$29</div>
+    <p>Weekly execution system and AI workflows.</p>
+
+    <!-- 🔵 PUT YOUR REAL STRIPE LINK BELOW -->
+    <a class="btn" href="https://buy.stripe.com/PUT_YOUR_REAL_LINK_HERE">
+      Buy Productivity Bundle
+    </a>
+  </div>
+
+</div>
 
 <footer>
-  <p>Operated by GNAIAAAC LLC • United States</p>
-  <p>Payments securely processed via Stripe • No guaranteed income claims</p>
-  <p>
-    <a href="/privacy.html">Privacy Policy</a> |
-    <a href="/terms.html">Terms</a> |
-    <a href="/refund.html">Refund Policy</a>
-  </p>
+  Operated by GNAIAAAC LLC • Payments processed securely via Stripe
 </footer>
 
 </body>
