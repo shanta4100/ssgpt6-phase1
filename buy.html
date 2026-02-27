@@ -2,99 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Buy — Moonlight Global AI</title>
-
-  <!-- OPTIONAL: use your existing style.css -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buy • SSGPT6</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- PayPal Hosted Buttons SDK (LOAD ONCE ONLY) -->
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=BAAvsbpiY9Aj7jMCA5l289snKo5vHuvhuNMCZdO5p4fOxwoS-JADMO5vvsc-lW-E_BLYzewXrw4HiohaCY&components=hosted-buttons&enable-funding=venmo&currency=USD">
-  </script>
-
-  <style>
-    /* If you already have style.css, you can delete this block */
-    body { margin:0; font-family: system-ui, -apple-system, Arial, sans-serif; background:#071423; color:#eaf2ff; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 64px; }
-    .top { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
-    .brand { font-weight:700; letter-spacing:.3px; }
-    .nav a { color:#cfe2ff; text-decoration:none; margin-left:14px; opacity:.9; }
-    .nav a:hover { opacity:1; text-decoration:underline; }
-    .hero { margin-top:18px; padding:18px; border:1px solid rgba(255,255,255,.08); border-radius:16px; background: rgba(255,255,255,.03); }
-    h1 { margin: 0 0 10px; font-size: 28px; }
-    p { margin: 8px 0; opacity:.92; line-height:1.5; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin-top:14px; }
-    .card { padding:16px; border:1px solid rgba(255,255,255,.08); border-radius:16px; background: rgba(0,0,0,.12); }
-    .price { display:inline-block; margin:8px 0 12px; font-weight:800; font-size:22px; }
-    .note { margin-top:18px; font-size:14px; opacity:.85; }
-    .small { font-size:13px; opacity:.8; }
-    .footer { margin-top:24px; font-size:13px; opacity:.75; }
-  </style>
+  <link rel="icon" href="icon-192.png" />
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="top">
-      <div class="brand">Moonlight Global AI™</div>
-      <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="tools.html">Tools</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </div>
+  <header>
+    <h1>SSGPT6 • Payments</h1>
+    <p>Choose a plan and pay securely (PayPal + Venmo).</p>
+  </header>
+
+  <main class="container">
+    <h2>Choose your option</h2>
+
+    <div style="max-width: 520px; margin: 0 auto; text-align: left;">
+      <h3>$19 — Creator Toolkit</h3>
+      <div id="paypal-container-GTRRG6XX2LNKW"></div>
+
+      <hr style="margin: 24px 0; opacity: 0.2;">
+
+      <h3>$29 — Creator Toolkit PRO</h3>
+      <div id="paypal-container-E7Y9KQJHJ939W"></div>
+
+      <hr style="margin: 24px 0; opacity: 0.2;">
+
+      <h3>$49 — Creator Toolkit ELITE</h3>
+      <div id="paypal-container-6EEZHCX4MLQ4C"></div>
     </div>
 
-    <div class="hero">
-      <h1>Choose your package</h1>
-      <p>Pay securely by card or Venmo using PayPal checkout.</p>
-      <p class="small">After payment, you will be redirected to <b>thankyou.html</b>.</p>
-    </div>
-
-    <div class="grid">
-      <!-- PACKAGE 1 -->
-      <div class="card">
-        <h2 style="margin:0 0 6px;">Creator Toolkit — Starter</h2>
-        <div class="price">$19</div>
-        <p class="small">Best for beginners. Simple, practical, people-first.</p>
-
-        <!-- PayPal button renders here -->
-        <div id="paypal-container-GTRRG6XX2LNKW"></div>
-      </div>
-
-      <!-- PACKAGE 2 -->
-      <div class="card">
-        <h2 style="margin:0 0 6px;">Creator Toolkit — Pro</h2>
-        <div class="price">$29</div>
-        <p class="small">More templates + stronger structure.</p>
-
-        <div id="paypal-container-E7Y9KQJHJ939W"></div>
-      </div>
-
-      <!-- PACKAGE 3 -->
-      <div class="card">
-        <h2 style="margin:0 0 6px;">Creator Toolkit — Elite</h2>
-        <div class="price">$49</div>
-        <p class="small">Full premium toolkit + priority delivery.</p>
-
-        <div id="paypal-container-6EEZHCX4MLQ4C"></div>
-      </div>
-    </div>
-
-    <p class="note">
-      Need help or didn’t receive your delivery? Email: <b>ssgpt6@aol.com</b>
+    <p style="margin-top: 28px; opacity: 0.8;">
+      After payment, you’ll be redirected to: <b>/thankyou.html</b>
     </p>
 
-    <div class="footer">
-      © <span id="year"></span> Moonlight Global AI™ — Operated by GNAIAAAC LLC
-    </div>
-  </div>
+    <p style="margin-top: 12px;">
+      <a class="button" href="index.html">Back to Home</a>
+    </p>
+  </main>
+
+  <footer class="footer">
+    © <span id="y"></span> SSGPT6 • GNAIAAAC LLC
+  </footer>
+
+  <!-- Load PayPal Hosted Buttons ONCE -->
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAvsbpiY9Aj7jMCA5l289snKo5vHuvhuNMCZdO5p4fOxwoS-JADMO5vvsc-lW-E_BLYzewXrw4HiohaCY&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
 
   <script>
-    // Year
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("y").textContent = new Date().getFullYear();
 
-    // Render all 3 PayPal Hosted Buttons
     paypal.HostedButtons({ hostedButtonId: "GTRRG6XX2LNKW" })
       .render("#paypal-container-GTRRG6XX2LNKW");
 
