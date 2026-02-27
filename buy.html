@@ -1,72 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Buy • Moonlight Global AI</title>
-<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .toggle-dot { transition: transform 0.2s ease-in-out; }
+        .active-dot { transform: translateX(1.75rem); }
+    </style>
 </head>
+<body class="bg-gray-50 font-sans">
 
-<body>
-<header>
-  <div class="logo">🌙 Moonlight Global AI</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="vault.html">Vault</a>
-    <a href="buy.html">Buy</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<div class="max-w-6xl mx-auto py-16 px-4">
+    <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold mb-2">Choose Your Plan</h2>
+        <p class="text-gray-600">
+            Payment Date: <span id="payment-date" class="font-bold"></span> | 
+            Delivery: <span class="font-bold">Instant Digital Access</span>
+        </p>
+    </div>
 
-<section class="hero">
-  <h1>Choose Your Package</h1>
-  <p>Secure checkout (PayPal + Card + Venmo). Digital delivery.</p>
-</section>
+    <div class="flex justify-center items-center mb-12 space-x-4">
+        <span id="label-onetime" class="text-sm font-bold text-black">One-Time Payment</span>
+        <button id="toggle-btn" class="relative w-14 h-7 bg-blue-600 rounded-full focus:outline-none">
+            <div id="dot" class="absolute top-1 left-1 bg-white w-5 h-5 rounded-full shadow toggle-dot"></div>
+        </button>
+        <span id="label-monthly" class="text-sm font-medium text-gray-400">Monthly Subscription</span>
+    </div>
 
-<section class="pricing">
-  <div class="card">
-    <h2>Starter</h2>
-    <p class="price">$9</p>
-    <ul>
-      <li>AI Script Pack</li>
-      <li>Basic Prompt Kit</li>
-    </ul>
-    <a class="btn" target="_blank" href="https://www.paypal.com/ncp/payment/GTRRG6XX2LNKW">Pay Now</a>
-  </div>
+    <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="flex flex-col border border-gray-200 rounded-2xl p-8 shadow-sm bg-white">
+            <h3 class="text-xl font-bold mb-2">Basic</h3>
+            <div class="text-5xl font-extrabold mb-6">$19<span class="billing-label text-lg font-normal text-gray-400"></span></div>
+            <div class="mt-auto space-y-4">
+                <a id="stripe-basic" href="STRIPE_ONETIME_19" class="block w-full py-4 bg-black text-white text-center rounded-xl font-semibold hover:bg-gray-800 transition">Pay with Card / Afterpay</a>
+                <a id="paypal-basic" href="PAYPAL_ONETIME_19" class="block w-full py-4 bg-[#FFC439] text-[#003087] text-center rounded-xl font-bold hover:bg-[#f2ba32] transition">PayPal</a>
+            </div>
+        </div>
 
-  <div class="card">
-    <h2>Creator</h2>
-    <p class="price">$29</p>
-    <ul>
-      <li>Advanced Scripts</li>
-      <li>Branding Mini Kit</li>
-      <li>Automation Templates</li>
-    </ul>
-    <a class="btn" target="_blank" href="https://www.paypal.com/ncp/payment/E7Y9KQJHJ939W">Pay Now</a>
-  </div>
+        <div class="flex flex-col border border-gray-200 rounded-2xl p-8 shadow-sm bg-white">
+            <h3 class="text-xl font-bold mb-2">Standard</h3>
+            <div class="text-5xl font-extrabold mb-6">$29<span class="billing-label text-lg font-normal text-gray-400"></span></div>
+            <div class="mt-auto space-y-4">
+                <a id="stripe-standard" href="STRIPE_ONETIME_29" class="block w-full py-4 bg-black text-white text-center rounded-xl font-semibold hover:bg-gray-800 transition">Pay with Card / Afterpay</a>
+                <a id="paypal-standard" href="PAYPAL_ONETIME_29" class="block w-full py-4 bg-[#FFC439] text-[#003087] text-center rounded-xl font-bold hover:bg-[#f2ba32] transition">PayPal</a>
+            </div>
+        </div>
 
-  <div class="card">
-    <h2>Pro</h2>
-    <p class="price">$49</p>
-    <ul>
-      <li>Full Prompt Vault</li>
-      <li>Business Templates</li>
-      <li>Priority Support</li>
-    </ul>
-    <a class="btn" target="_blank" href="https://www.paypal.com/ncp/payment/6EEZHCX4MLQ4C">Pay Now</a>
-  </div>
-</section>
+        <div class="flex flex-col border border-gray-200 rounded-2xl p-8 shadow-sm bg-white border-blue-500 ring-2 ring-blue-100">
+            <h3 class="text-xl font-bold mb-2">Pro</h3>
+            <div class="text-5xl font-extrabold mb-6">$49<span class="billing-label text-lg font-normal text-gray-400"></span></div>
+            <div class="mt-auto space-y-4">
+                <a id="stripe-pro" href="STRIPE_ONETIME_49" class="block w-full py-4 bg-black text-white text-center rounded-xl font-semibold hover:bg-gray-800 transition">Pay with Card / Afterpay</a>
+                <a id="paypal-pro" href="PAYPAL_ONETIME_49" class="block w-full py-4 bg-[#FFC439] text-[#003087] text-center rounded-xl font-bold hover:bg-[#f2ba32] transition">PayPal</a>
+            </div>
+        </div>
 
-<section class="hero">
-  <h2>After Payment</h2>
-  <p>Email your receipt + package name to: <b>ssgpt6@aol.com</b></p>
-  <a class="btn" href="thankyou.html">Open Thank You Page</a>
-</section>
+    </div>
+</div>
 
-<footer>
-  <p>© 2026 Moonlight Global AI – GNAIAAAC LLC</p>
-  <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a>
-</footer>
+<script>
+    // 1. Set Today's Date
+    document.getElementById('payment-date').innerText = new Date().toLocaleDateString();
+
+    // 2. Link Data (REPLACE THE PLACEHOLDERS BELOW WITH YOUR LIVE LINKS)
+    const links = {
+        onetime: {
+            stripe: ['STRIPE_ONETIME_19', 'STRIPE_ONETIME_29', 'STRIPE_ONETIME_49'],
+            paypal: ['PAYPAL_ONETIME_19', 'PAYPAL_ONETIME_29', 'PAYPAL_ONETIME_49']
+        },
+        monthly: {
+            stripe: ['STRIPE_SUB_19', 'STRIPE_SUB_29', 'STRIPE_SUB_49'],
+            paypal: ['PAYPAL_SUB_19', 'PAYPAL_SUB_29', 'PAYPAL_SUB_49']
+        }
+    };
+
+    let currentMode = 'onetime';
+    const toggleBtn = document.getElementById('toggle-btn');
+    const dot = document.getElementById('dot');
+
+    // 3. Toggle Functionality
+    toggleBtn.addEventListener('click', () => {
+        currentMode = (currentMode === 'onetime') ? 'monthly' : 'onetime';
+        
+        // Update UI Classes
+        dot.classList.toggle('active-dot');
+        document.getElementById('label-onetime').classList.toggle('font-bold');
+        document.getElementById('label-onetime').classList.toggle('text-gray-400');
+        document.getElementById('label-monthly').classList.toggle('font-bold');
+        document.getElementById('label-monthly').classList.toggle('text-gray-400');
+
+        // Update Links and Labels
+        const billingLabels = document.querySelectorAll('.billing-label');
+        billingLabels.forEach(el => el.innerText = currentMode === 'monthly' ? '/mo' : '');
+
+        // Update Hrefs
+        document.getElementById('stripe-basic').href = links[currentMode].stripe[0];
+        document.getElementById('paypal-basic').href = links[currentMode].paypal[0];
+        
+        document.getElementById('stripe-standard').href = links[currentMode].stripe[1];
+        document.getElementById('paypal-standard').href = links[currentMode].paypal[1];
+        
+        document.getElementById('stripe-pro').href = links[currentMode].stripe[2];
+        document.getElementById('paypal-pro').href = links[currentMode].paypal[2];
+    });
+</script>
+
 </body>
 </html>
