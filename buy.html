@@ -3,54 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Buy • SSGPT6</title>
+  <title>SSGPT6 • Payments</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="icon-192.png" />
 </head>
-
 <body>
-  <header>
-    <h1>SSGPT6 • Payments</h1>
-    <p>Choose a plan and pay securely (PayPal + Venmo).</p>
+  <header class="topbar">
+    <a class="brand" href="index.html">SSGPT6</a>
+    <nav class="nav">
+      <a href="tools.html">Tools</a>
+      <a href="index.html#learning">Learning</a>
+      <a href="buy.html" class="active">Buy</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
   </header>
 
   <main class="container">
-    <h2>Choose your option</h2>
+    <h1>SSGPT6 • Payments</h1>
+    <p class="lead">Choose a plan and pay securely (PayPal + Venmo).</p>
 
-    <div style="max-width: 520px; margin: 0 auto; text-align: left;">
-      <h3>$19 — Creator Toolkit</h3>
+    <section class="card">
+      <h2>$19 — Creator Toolkit (Starter)</h2>
+      <p>Digital creator starter toolkit package.</p>
       <div id="paypal-container-GTRRG6XX2LNKW"></div>
+    </section>
 
-      <hr style="margin: 24px 0; opacity: 0.2;">
-
-      <h3>$29 — Creator Toolkit PRO</h3>
+    <section class="card">
+      <h2>$29 — Creator Toolkit (PRO)</h2>
+      <p>Advanced creator toolkit package.</p>
       <div id="paypal-container-E7Y9KQJHJ939W"></div>
+    </section>
 
-      <hr style="margin: 24px 0; opacity: 0.2;">
-
-      <h3>$49 — Creator Toolkit ELITE</h3>
+    <section class="card">
+      <h2>$49 — Creator Toolkit (ELITE)</h2>
+      <p>Premium creator toolkit package.</p>
       <div id="paypal-container-6EEZHCX4MLQ4C"></div>
-    </div>
+    </section>
 
-    <p style="margin-top: 28px; opacity: 0.8;">
-      After payment, you’ll be redirected to: <b>/thankyou.html</b>
-    </p>
-
-    <p style="margin-top: 12px;">
-      <a class="button" href="index.html">Back to Home</a>
-    </p>
+    <section class="card subtle">
+      <h2>Having trouble?</h2>
+      <p>
+        If PayPal doesn’t load on iPhone Safari, try Chrome or Private Mode.
+        You can also pay via Cash App:
+        <a href="https://cash.app/$MoonlightGlobalAI" target="_blank" rel="noopener">cash.app/$MoonlightGlobalAI</a>
+      </p>
+    </section>
   </main>
 
-  <footer class="footer">
-    © <span id="y"></span> SSGPT6 • GNAIAAAC LLC
-  </footer>
-
-  <!-- Load PayPal Hosted Buttons ONCE -->
-  <script src="https://www.paypal.com/sdk/js?client-id=BAAvsbpiY9Aj7jMCA5l289snKo5vHuvhuNMCZdO5p4fOxwoS-JADMO5vvsc-lW-E_BLYzewXrw4HiohaCY&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+  <!-- IMPORTANT: Only include the PayPal SDK ONCE -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=BAAvsbpiY9Aj7jMCA5l289snKo5vHuvhuNMCZdO5p4fOxwoS-JADMO5vvsc-lW-E_BLYzewXrw4HiohaCY&components=hosted-buttons&enable-funding=venmo&currency=USD">
+  </script>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-
     paypal.HostedButtons({ hostedButtonId: "GTRRG6XX2LNKW" })
       .render("#paypal-container-GTRRG6XX2LNKW");
 
@@ -62,8 +66,3 @@
   </script>
 </body>
 </html>
-<div id="paypal-container-GTRRG6XX2LNKW"></div>
-<script>
-  paypal.HostedButtons({ hostedButtonId: "GTRRG6XX2LNKW" })
-    .render("#paypal-container-GTRRG6XX2LNKW");
-</script>
