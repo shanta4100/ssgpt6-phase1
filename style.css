@@ -1,7 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState('monthly'); // 'monthly' or 'onetime'
+
+  // Current Date logic for transparency
+  const today = new Date().toLocaleDateString();
+  const deliveryDate = "Instant Digital Access";
 
   const plans = [
     {
@@ -25,34 +29,48 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto py-12 px-4">
+    <div className="max-w-6xl mx-auto py-16 px-4 font-sans">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold mb-2">Choose Your Plan</h2>
+        <p className="text-gray-600">Payment Date: <b>{today}</b> | Delivery: <b>{deliveryDate}</b></p>
+      </div>
+
       {/* Toggle Switch */}
-      <div className="flex justify-center items-center mb-10 space-x-4">
-        <span className={`text-sm ${billingCycle === 'onetime' ? 'font-bold' : 'text-gray-500'}`}>One-Time</span>
+      <div className="flex justify-center items-center mb-12 space-x-4">
+        <span className={`text-sm font-medium ${billingCycle === 'onetime' ? 'text-black' : 'text-gray-400'}`}>One-Time Payment</span>
         <button 
           onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'onetime' : 'monthly')}
           className="relative w-14 h-7 bg-blue-600 rounded-full transition-colors duration-200 focus:outline-none"
         >
-          <div className={`absolute top-1 left-1 bg-white w-5 h-5 rounded-full transition-transform duration-200 ${billingCycle === 'monthly' ? 'translate-x-7' : ''}`} />
+          <div className={`absolute top-1 left-1 bg-white w-5 h-5 rounded-full shadow transition-transform duration-200 ${billingCycle === 'monthly' ? 'translate-x-7' : 'translate-x-0'}`} />
         </button>
-        <span className={`text-sm ${billingCycle === 'monthly' ? 'font-bold' : 'text-gray-500'}`}>Monthly Sub</span>
+        <span className={`text-sm font-medium ${billingCycle === 'monthly' ? 'text-black' : 'text-gray-400'}`}>Monthly Subscription</span>
       </div>
 
       {/* Pricing Cards */}
       <div className="grid md:grid-cols-3 gap-8">
         {plans.map((plan) => (
-          <div key={plan.name} className="border rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
-            <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
-            <div className="text-4xl font-bold mb-6">{plan.price}<span className="text-sm font-normal text-gray-500">{billingCycle === 'monthly' ? '/mo' : ''}</span></div>
+          <div key={plan.name} className="flex flex-col border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 bg-white">
+            <h3 className="text-xl font-bold mb-2 text-gray-800">{plan.name}</h3>
+            <div className="text-5xl font-extrabold mb-6">
+              {plan.price}
+              <span className="text-lg font-normal text-gray-400">
+                {billingCycle === 'monthly' ? '/mo' : ''}
+              </span>
+            </div>
             
-            <div className="space-y-3">
-              <a href={plan.stripe} className="block w-full py-3 px-4 bg-black text-white text-center rounded-lg font-medium hover:bg-gray-800 transition">
-                Pay with Card
+            <div className="mt-auto space-y-4">
+              <a href={plan.stripe} className="block w-full py-4 px-4 bg-black text-white text-center rounded-xl font-semibold hover:bg-gray-800 transition transform active:scale-95">
+                Pay with Card / Afterpay
               </a>
-              <a href={plan.paypal} className="block w-full py-3 px-4 bg-[#FFC439] text-[#003087] text-center rounded-lg font-bold hover:bg-[#f2ba32] transition">
+              <a href={plan.paypal} className="block w-full py-4 px-4 bg-[#FFC439] text-[#003087] text-center rounded-xl font-bold hover:bg-[#f2ba32] transition transform active:scale-95">
                 PayPal
               </a>
             </div>
+            
+            <p className="mt-4 text-center text-xs text-gray-400">
+              {billingCycle === 'monthly' ? 'Secure recurring billing' : 'One-time secure checkout'}
+            </p>
           </div>
         ))}
       </div>
