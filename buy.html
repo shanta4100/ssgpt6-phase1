@@ -1,57 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Buy – Moonlight Global AI</title>
 
   <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      margin:0;
+      background:#0b1426;
+      color:white;
+      font-family:Arial, sans-serif;
+      text-align:center;
+      padding:40px 20px;
+    }
+    .container{
+      max-width:700px;
+      margin:auto;
+    }
+    .plan{
+      background:#10243a;
+      padding:30px;
+      border-radius:16px;
+      margin-bottom:25px;
+      border:1px solid rgba(255,255,255,.08);
+    }
+    h1{margin-bottom:30px;}
+    h2{margin:0 0 10px;}
+    .price{
+      font-size:28px;
+      font-weight:bold;
+      margin:10px 0 20px;
+      color:#ffd76b;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 28px;
+      background:linear-gradient(135deg,#6b4eff,#4f7bff);
+      color:white;
+      text-decoration:none;
+      border-radius:12px;
+      font-weight:bold;
+      box-shadow:0 10px 25px rgba(0,0,0,.3);
+    }
+    .btn:hover{
+      opacity:.9;
+    }
+    .back{
+      margin-top:30px;
+      display:block;
+      color:#8faaff;
+      text-decoration:none;
+    }
+  </style>
 </head>
+<body>
 
-<body style="background:#0b1426; color:white; font-family:Arial, sans-serif; text-align:center; padding:40px;">
+<div class="container">
 
-  <img src="icon-192.png" width="120" style="border-radius:20px; margin-bottom:20px;" />
+<h1>Choose Your Plan</h1>
 
-  <h1>Creator Toolkit</h1>
-  <p style="opacity:.8; max-width:500px; margin:auto;">
-    Hooks, scripts, and structured AI workflows designed to help you publish faster and earn consistently.
-  </p>
-
-  <h2 style="margin-top:30px;">$19 – One Time Payment</h2>
-
-  <br>
-
-  <!-- Stripe Payment Button -->
-  <a href="https://buy.stripe.com/fZu6oG8aL5rk6Ae6Nz57W09"
-     style="
-     display:inline-block;
-     background:linear-gradient(135deg,#6b4eff,#4f7bff);
-     color:white;
-     padding:16px 40px;
-     border-radius:12px;
-     text-decoration:none;
-     font-size:18px;
-     font-weight:bold;
-     box-shadow:0 10px 25px rgba(0,0,0,.3);
-     margin-top:20px;
-     ">
-     Secure Checkout
+<!-- $19 PLAN -->
+<div class="plan">
+  <h2>Starter Toolkit</h2>
+  <div class="price">$19</div>
+  <p>Basic creator templates and AI hooks.</p>
+  <a class="btn" href="https://buy.stripe.com/fZu6oG8aL5rk6Ae6Nz57W09">
+    Buy $19
   </a>
+</div>
 
-  <br><br>
-
-  <p style="font-size:14px; opacity:.6;">
-    Secure payment powered by Stripe. Instant confirmation via email.
-  </p>
-
-  <br><br>
-
-  <a href="index.html" style="color:#8faaff; text-decoration:none;">
-    ← Back to Home
+<!-- $29 PLAN -->
+<div class="plan">
+  <h2>Pro Toolkit</h2>
+  <div class="price">$29</div>
+  <p>Starter + advanced creator workflows.</p>
+  <a class="btn" href="https://buy.stripe.com/6oU7sK62DaLEaQu1tf57W0a">
+    Buy $29
   </a>
+</div>
+
+<!-- $49 PLAN -->
+<div class="plan">
+  <h2>Elite Toolkit</h2>
+  <div class="price">$49</div>
+  <p>Full system + bonus AI automation packs.</p>
+  <a class="btn" href="https://buy.stripe.com/4gMdR8fDd4ng8Imc7T57W0b">
+    Buy $49
+  </a>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
 
 </body>
 </html>
