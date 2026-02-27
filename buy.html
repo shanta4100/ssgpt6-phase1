@@ -2,79 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SSGPT6 • Payments</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <header class="topbar">
-    <a class="brand" href="index.html">SSGPT6</a>
-    <nav class="nav">
-      <a href="tools.html">Tools</a>
-      <a href="buy.html" class="active">Buy</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </nav>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>SSGPT6 • Payments</h1>
+      <p class="sub">Choose a plan and pay securely (PayPal + Venmo + Card).</p>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="buy.html">Buy</a>
+        <a href="tools.html">Tools</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
   </header>
 
   <main class="wrap">
-    <section class="hero">
-      <h1>SSGPT6 • Payments</h1>
-      <p class="muted">Choose a plan and pay securely (PayPal + Venmo).</p>
+    <div class="notice">
+      <strong>Testing note (important):</strong>
+      If you are logged into the seller PayPal account, PayPal will block checkout.
+      Test using <strong>Safari Private Browsing</strong> or a <strong>different PayPal account</strong>.
+    </div>
+
+    <!-- PLAN 1 -->
+    <section class="card">
+      <div class="card-head">
+        <h2>$19 — Creator Toolkit (Starter)</h2>
+        <div class="price">$19.00 USD</div>
+      </div>
+      <p>Digital creator starter toolkit package.</p>
+
+      <div class="paygrid">
+        <div class="paybox">
+          <h3>PayPal / Venmo / Card</h3>
+          <div id="paypal-container-GTRRG6XX2LNKW"></div>
+        </div>
+
+        <div class="paybox">
+          <h3>Backup Pay Link</h3>
+          <a class="btn" href="https://www.paypal.com/ncp/payment/GTRRG6XX2LNKW" target="_blank" rel="noopener">
+            Open PayPal Checkout
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="grid">
-
-      <!-- $19 -->
-      <article class="card">
-        <h2>$19 — Creator Toolkit</h2>
-        <p class="price">$19.00 USD</p>
-        <p class="muted">Starter toolkit package.</p>
-        <a class="btn primary" href="https://www.paypal.com/ncp/payment/GTRRG6XX2LNKW" target="_blank" rel="noopener">
-          Pay with PayPal / Venmo
-        </a>
-      </article>
-
-      <!-- $29 -->
-      <article class="card">
+    <!-- PLAN 2 -->
+    <section class="card">
+      <div class="card-head">
         <h2>$29 — Creator Toolkit PRO</h2>
-        <p class="price">$29.00 USD</p>
-        <p class="muted">Pro package with expanded templates.</p>
-        <a class="btn primary" href="https://www.paypal.com/ncp/payment/E7Y9KQJHJ939W" target="_blank" rel="noopener">
-          Pay with PayPal / Venmo
-        </a>
-      </article>
+        <div class="price">$29.00 USD</div>
+      </div>
+      <p>Pro toolkit package (more advanced templates + systems).</p>
 
-      <!-- $49 -->
-      <article class="card">
+      <div class="paygrid">
+        <div class="paybox">
+          <h3>PayPal / Venmo / Card</h3>
+          <div id="paypal-container-E7Y9KQJHJ939W"></div>
+        </div>
+
+        <div class="paybox">
+          <h3>Backup Pay Link</h3>
+          <a class="btn" href="https://www.paypal.com/ncp/payment/E7Y9KQJHJ939W" target="_blank" rel="noopener">
+            Open PayPal Checkout
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAN 3 -->
+    <section class="card">
+      <div class="card-head">
         <h2>$49 — Creator Toolkit ELITE</h2>
-        <p class="price">$49.00 USD</p>
-        <p class="muted">Elite package with full bundle access.</p>
-        <a class="btn primary" href="https://www.paypal.com/ncp/payment/6EEZHCX4MLQ4C" target="_blank" rel="noopener">
-          Pay with PayPal / Venmo
-        </a>
-      </article>
+        <div class="price">$49.00 USD</div>
+      </div>
+      <p>Elite toolkit package (maximum templates + bonus assets).</p>
 
+      <div class="paygrid">
+        <div class="paybox">
+          <h3>PayPal / Venmo / Card</h3>
+          <div id="paypal-container-6EEZHCX4MLQ4C"></div>
+        </div>
+
+        <div class="paybox">
+          <h3>Backup Pay Link</h3>
+          <a class="btn" href="https://www.paypal.com/ncp/payment/6EEZHCX4MLQ4C" target="_blank" rel="noopener">
+            Open PayPal Checkout
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="note">
-      <h3>After you pay</h3>
-      <p class="muted">
-        After payment, PayPal will show a confirmation. If you want an automatic redirect to
-        <b>thankyou.html</b>, you must set the “Return URL” inside PayPal for each product.
-      </p>
-      <a class="btn" href="thankyou.html">Open Thank You Page</a>
+    <!-- OPTIONAL: CASH APP -->
+    <section class="card">
+      <div class="card-head">
+        <h2>Optional: Cash App</h2>
+        <div class="price">Manual</div>
+      </div>
+      <p>If PayPal has issues, you can pay by Cash App (manual confirmation):</p>
+      <a class="btn" href="https://cash.app/$MoonlightGlobalAI" target="_blank" rel="noopener">
+        Pay with Cash App
+      </a>
+      <p class="tiny">After Cash App payment, email your receipt to <strong>ssgpt6@aol.com</strong>.</p>
     </section>
 
+    <footer class="foot">
+      <p class="tiny">Operator: GNAIAAAC LLC • Support: ssgpt6@aol.com</p>
+    </footer>
   </main>
 
-  <footer class="footer">
-    <p class="muted">© <span id="y"></span> SSGPT6 / GNAIAAAC LLC</p>
-  </footer>
+  <!-- Load PayPal Hosted Buttons ONCE -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=BAAvsbpiY9Aj7jMCA5l289snKo5vHuvhuNMCZdO5p4fOxwoS-JADMO5vvsc-lW-E_BLYzewXrw4HiohaCY&components=hosted-buttons&enable-funding=venmo&currency=USD">
+  </script>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    // Render the 3 Hosted Buttons
+    paypal.HostedButtons({ hostedButtonId: "GTRRG6XX2LNKW" }).render("#paypal-container-GTRRG6XX2LNKW");
+    paypal.HostedButtons({ hostedButtonId: "E7Y9KQJHJ939W" }).render("#paypal-container-E7Y9KQJHJ939W");
+    paypal.HostedButtons({ hostedButtonId: "6EEZHCX4MLQ4C" }).render("#paypal-container-6EEZHCX4MLQ4C");
   </script>
 </body>
 </html>
