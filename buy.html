@@ -1,131 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SSGPT6 • Payments</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Buy • Moonlight Global AI</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="top">
-    <div class="wrap">
-      <h1>SSGPT6 • Payments</h1>
-      <p class="sub">Choose a plan and pay securely (PayPal + Venmo + Card).</p>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a class="active" href="buy.html">Buy</a>
-        <a href="tools.html">Tools</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="logo">🌙 Moonlight Global AI</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="vault.html">Vault</a>
+    <a href="buy.html">Buy</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <main class="wrap">
-    <div class="notice">
-      <strong>Testing note (important):</strong>
-      If you are logged into the seller PayPal account, PayPal will block checkout.
-      Test using <strong>Safari Private Browsing</strong> or a <strong>different PayPal account</strong>.
-    </div>
+<section class="hero">
+  <h1>Choose Your Package</h1>
+  <p>Secure checkout (PayPal + Card + Venmo). Digital delivery.</p>
+</section>
 
-    <!-- PLAN 1 -->
-    <section class="card">
-      <div class="card-head">
-        <h2>$19 — Creator Toolkit (Starter)</h2>
-        <div class="price">$19.00 USD</div>
-      </div>
-      <p>Digital creator starter toolkit package.</p>
+<section class="pricing">
+  <div class="card">
+    <h2>Starter</h2>
+    <p class="price">$9</p>
+    <ul>
+      <li>AI Script Pack</li>
+      <li>Basic Prompt Kit</li>
+    </ul>
+    <a class="btn" target="_blank" href="https://www.paypal.com/ncp/payment/GTRRG6XX2LNKW">Pay Now</a>
+  </div>
 
-      <div class="paygrid">
-        <div class="paybox">
-          <h3>PayPal / Venmo / Card</h3>
-          <div id="paypal-container-GTRRG6XX2LNKW"></div>
-        </div>
+  <div class="card">
+    <h2>Creator</h2>
+    <p class="price">$29</p>
+    <ul>
+      <li>Advanced Scripts</li>
+      <li>Branding Mini Kit</li>
+      <li>Automation Templates</li>
+    </ul>
+    <a class="btn" target="_blank" href="https://www.paypal.com/ncp/payment/E7Y9KQJHJ939W">Pay Now</a>
+  </div>
 
-        <div class="paybox">
-          <h3>Backup Pay Link</h3>
-          <a class="btn" href="https://www.paypal.com/ncp/payment/GTRRG6XX2LNKW" target="_blank" rel="noopener">
-            Open PayPal Checkout
-          </a>
-        </div>
-      </div>
-    </section>
+  <div class="card">
+    <h2>Pro</h2>
+    <p class="price">$49</p>
+    <ul>
+      <li>Full Prompt Vault</li>
+      <li>Business Templates</li>
+      <li>Priority Support</li>
+    </ul>
+    <a class="btn" target="_blank" href="https://www.paypal.com/ncp/payment/6EEZHCX4MLQ4C">Pay Now</a>
+  </div>
+</section>
 
-    <!-- PLAN 2 -->
-    <section class="card">
-      <div class="card-head">
-        <h2>$29 — Creator Toolkit PRO</h2>
-        <div class="price">$29.00 USD</div>
-      </div>
-      <p>Pro toolkit package (more advanced templates + systems).</p>
+<section class="hero">
+  <h2>After Payment</h2>
+  <p>Email your receipt + package name to: <b>ssgpt6@aol.com</b></p>
+  <a class="btn" href="thankyou.html">Open Thank You Page</a>
+</section>
 
-      <div class="paygrid">
-        <div class="paybox">
-          <h3>PayPal / Venmo / Card</h3>
-          <div id="paypal-container-E7Y9KQJHJ939W"></div>
-        </div>
-
-        <div class="paybox">
-          <h3>Backup Pay Link</h3>
-          <a class="btn" href="https://www.paypal.com/ncp/payment/E7Y9KQJHJ939W" target="_blank" rel="noopener">
-            Open PayPal Checkout
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PLAN 3 -->
-    <section class="card">
-      <div class="card-head">
-        <h2>$49 — Creator Toolkit ELITE</h2>
-        <div class="price">$49.00 USD</div>
-      </div>
-      <p>Elite toolkit package (maximum templates + bonus assets).</p>
-
-      <div class="paygrid">
-        <div class="paybox">
-          <h3>PayPal / Venmo / Card</h3>
-          <div id="paypal-container-6EEZHCX4MLQ4C"></div>
-        </div>
-
-        <div class="paybox">
-          <h3>Backup Pay Link</h3>
-          <a class="btn" href="https://www.paypal.com/ncp/payment/6EEZHCX4MLQ4C" target="_blank" rel="noopener">
-            Open PayPal Checkout
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- OPTIONAL: CASH APP -->
-    <section class="card">
-      <div class="card-head">
-        <h2>Optional: Cash App</h2>
-        <div class="price">Manual</div>
-      </div>
-      <p>If PayPal has issues, you can pay by Cash App (manual confirmation):</p>
-      <a class="btn" href="https://cash.app/$MoonlightGlobalAI" target="_blank" rel="noopener">
-        Pay with Cash App
-      </a>
-      <p class="tiny">After Cash App payment, email your receipt to <strong>ssgpt6@aol.com</strong>.</p>
-    </section>
-
-    <footer class="foot">
-      <p class="tiny">Operator: GNAIAAAC LLC • Support: ssgpt6@aol.com</p>
-    </footer>
-  </main>
-
-  <!-- Load PayPal Hosted Buttons ONCE -->
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=BAAvsbpiY9Aj7jMCA5l289snKo5vHuvhuNMCZdO5p4fOxwoS-JADMO5vvsc-lW-E_BLYzewXrw4HiohaCY&components=hosted-buttons&enable-funding=venmo&currency=USD">
-  </script>
-
-  <script>
-    // Render the 3 Hosted Buttons
-    paypal.HostedButtons({ hostedButtonId: "GTRRG6XX2LNKW" }).render("#paypal-container-GTRRG6XX2LNKW");
-    paypal.HostedButtons({ hostedButtonId: "E7Y9KQJHJ939W" }).render("#paypal-container-E7Y9KQJHJ939W");
-    paypal.HostedButtons({ hostedButtonId: "6EEZHCX4MLQ4C" }).render("#paypal-container-6EEZHCX4MLQ4C");
-  </script>
+<footer>
+  <p>© 2026 Moonlight Global AI – GNAIAAAC LLC</p>
+  <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a>
+</footer>
 </body>
 </html>
